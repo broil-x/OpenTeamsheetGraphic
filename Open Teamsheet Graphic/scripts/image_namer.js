@@ -6,8 +6,10 @@ function linkImage(name) {
 	// Find Image link
 	var imname = name.toLowerCase();
 	imname = imname.replace(' ','-').replace(')','').replace('(','');
-	imname = imname.replace('-f','-female').replace('-bloodmoon','').replace('-rapid-strike','');
+	imname = imname.replace('-f','-female').replace('-rapid-strike','');
 	imname = imname.replace('-alola','-alolan');
+	imname = imname.replace('calyrex-ice','calyrex-ice-rider');
+	imname = imname.replace('calyrex-shadow','calyrex-shadow-rider');
 
   if(imname.includes("sinistcha")) {
     return "https://img.game8.co/3763925/f08cd2e93762e07532cf393e899eb0c0.png/show";
@@ -28,8 +30,10 @@ function linkImage(name) {
 function linkBackup(name) {
 	var imname = name.toLowerCase();
 	imname = imname.replace(' ','-').replace(')','').replace('(','');
-	imname = imname.replace('-f','-female').replace('-bloodmoon','').replace('-rapid-strike','');
+	imname = imname.replace('-f','-female').replace('-rapid-strike','');
 	imname = imname.replace('-alola','-alolan');
+	imname = imname.replace('calyrex-ice','calyrex-ice-rider');
+	imname = imname.replace('calyrex-shadow','calyrex-shadow-rider');
 	//var backuplink = "https://img.pokemondb.net/artwork/large/"+imname+".jpg";
 	var backuplink = "https://img.pokemondb.net/sprites/home/normal/2x/"+imname+".jpg";
 	return backuplink;
